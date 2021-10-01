@@ -1,0 +1,18 @@
+
+# this file generates a random array to be used by all programs in the sorting category
+
+import random
+
+def array_generator():
+    array = []
+    for i in range(random.randint(10, 100)):
+        array.append(random.randint(1, 1000))
+    return array
+
+def main():
+    array = array_generator()
+    print(array)
+
+
+if __name__ == "__main__":
+    main()
